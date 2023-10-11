@@ -5,6 +5,13 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsWeb", "DesignPatternsWeb\DesignPatternsWeb.csproj", "{C197CA1E-5AA3-446F-BF83-9A294B053341}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4AFEF6D2-A8F7-405D-9799-38D24E7C7454}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLibrary", "BusinessLibrary\BusinessLibrary.csproj", "{AD80D078-6993-4297-8AAA-C37E6474ACF5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{C197CA1E-5AA3-446F-BF83-9A294B053341}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C197CA1E-5AA3-446F-BF83-9A294B053341}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C197CA1E-5AA3-446F-BF83-9A294B053341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD80D078-6993-4297-8AAA-C37E6474ACF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD80D078-6993-4297-8AAA-C37E6474ACF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD80D078-6993-4297-8AAA-C37E6474ACF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD80D078-6993-4297-8AAA-C37E6474ACF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
