@@ -19,6 +19,7 @@ public class SingletonExampleController : ControllerBase
     [HttpGet(Name = "Get")]
     public IActionResult Get()
     {
+        _logger.LogWarning("aaaaaaaaaaaaaaaaaa");
         _service.SayHello("Using DI");
 
         MemoryHungryServiceClassic.Instance.SayHello("Using the classic approach");
