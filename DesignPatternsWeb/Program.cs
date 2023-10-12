@@ -1,4 +1,4 @@
-using BusinessLibrary.Services;
+using BusinessLibrary.Services.Singleton;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<MemoryHungryService>();
+builder.Services.AddSingleton<ISayHello, MemoryHungryService>();
 
 
 var app = builder.Build();
