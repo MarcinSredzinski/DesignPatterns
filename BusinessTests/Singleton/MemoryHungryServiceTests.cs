@@ -12,9 +12,9 @@ namespace BusinessTests.Singleton
         }
 
         [Test]
-        [TestCase("potatoes", "--------------Hello there! potatoes")]
-        [TestCase("case 2", "--------------Hello there! case 2")]
-        [TestCase("AAAAAAAAA", "--------------Hello there! AAAAAAAAA")]
+        [TestCase("potatoes", "--------------Hello there! Said hello 0 times, from: potatoes")]
+        [TestCase("case 2", "--------------Hello there! Said hello 0 times, from: case 2")]
+        [TestCase("AAAAAAAAA", "--------------Hello there! Said hello 0 times, from: AAAAAAAAA")]
         public void SayHelloShouldReturnString(string origin, string expected)
         {
             //Arrange

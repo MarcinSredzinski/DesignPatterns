@@ -8,6 +8,7 @@ public class MemoryHungryServiceClassic : ISayHello
         Console.WriteLine("--------------Classic approach, a new instance of Memory Hungry Service was created!");
     }
 
+    private int saidHelloCounter = 0;
     private static MemoryHungryServiceClassic instance = null;
 
     public static MemoryHungryServiceClassic Instance
@@ -24,7 +25,8 @@ public class MemoryHungryServiceClassic : ISayHello
 
     public string SayHello(string origin)
     {
-        string hello = string.Format("--------------Hello there! {0}", origin);
+        string hello = string.Format("--------------Hello there! Said hello {0} times, from: {1}", saidHelloCounter, origin);
+        saidHelloCounter++;
         Console.WriteLine(hello);
         return hello;
     }
