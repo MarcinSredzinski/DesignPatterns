@@ -2,5 +2,5 @@
 
 public interface ISayHello
 {
-    public void SayHello(string origin);
+    public string SayHello(string origin);
 }

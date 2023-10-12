@@ -21,8 +21,11 @@ public class MemoryHungryServiceClassic : ISayHello
             return instance;
         }
     }
-    public void SayHello(string origin)
+
+    public string SayHello(string origin)
     {
-        Console.WriteLine($"--------------Hello there! {origin}");
+        string hello = string.Format("--------------Hello there! {0}", origin);
+        Console.WriteLine(hello);
+        return hello;
     }
 }
