@@ -11,3 +11,7 @@ of the class every time it was called.
 Now there is a better approach available to us - using dependency injection in asp.net core, we can add singletons to 
 the service collection and then inject them into our classes. This way we can have a single instance of a class, 
 reused across the whole project.
+
+#### Sources
+https://www.pentalog.com/blog/design-patterns/singleton-design-pattern/ 
+https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
