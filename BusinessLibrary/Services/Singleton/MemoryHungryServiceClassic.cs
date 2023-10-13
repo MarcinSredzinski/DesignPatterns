@@ -9,16 +9,17 @@ public class MemoryHungryServiceClassic : ISayHello
     }
 
     private int saidHelloCounter = 0;
-    private static MemoryHungryServiceClassic instance = null;
+    private static MemoryHungryServiceClassic? instance = null;
 
     public static MemoryHungryServiceClassic Instance
     {
         get
         {
-            if (instance == null)
+            if (instance != null)
             {
-                instance = new MemoryHungryServiceClassic();
+                return instance;
             }
+            instance = new MemoryHungryServiceClassic();
             return instance;
         }
     }
