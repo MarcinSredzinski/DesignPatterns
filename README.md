@@ -15,3 +15,28 @@ reused across the whole project.
 #### Sources
 https://www.pentalog.com/blog/design-patterns/singleton-design-pattern/ 
 https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
+
+### Repository pattern 
+Repository pattern serves two main purposes:
+- to create an abstraction over the data layer, allowing to easier test and potentially switch persistance providers, 
+- to centralise the handling of the domain objects, 
+It is one of the Domain-Driven Design patterns, intended to keep persistence concerns outside of the system's domain model. You define one or more 
+abstractions on the persistence, usually by defining interfaces, that present the operations 
+done on the data store and then create adapters - concrete implementations of the interfaces, depending on the specific persistance 
+providers(in this example over the in memory database).
+
+#### Sources
+https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design 
+
+### Unit of work 
+This design pattern has one main focus: to assure, when using multiple repositories, the same context is used for all of them. 
+The unit of work class needs just a property for each repository and a Save method. Each repository instance needs to be instantiated using the same instance of DB context. 
+Thanks to this, the save is done once for each "unit". Assuming we want to create a client with his orders as an atomic operation, using the unit of work pattern 
+we can assure the client will be created only when the orders are created
+(as oposed to calling separately orders repository and clients repository and calling save on both of them). This helps with the data consistence. 
+Then the save is done on both sets of data. This comes in handy especially for more complex scenarios,
+when there are multiple calls to different repositories as a part of a single flow. Using unit of work makes sure that all the operations done on the multiple repositories 
+will be completed in a single transaction. 
+
+#### Sources
+https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design 
