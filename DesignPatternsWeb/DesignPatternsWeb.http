@@ -1,0 +1,28 @@
+﻿@DesignPatternsWeb_HostAddress = https://localhost:7200
+
+POST {{DesignPatternsWeb_HostAddress}}/api/customers
+Content-Type: application/json
+
+{
+    "name": "John",
+    "orders": [
+        {
+            "productName": "French fries",
+            "price": 120.00
+        },
+        {
+            "productName": "Burger",
+            "price": 150.00
+        },
+        {
+            "productName": "Coke",
+            "price": 20.00
+        }
+    ]
+}
+
+###
+
+GET {{DesignPatternsWeb_HostAddress}}/api/orders
+
+###

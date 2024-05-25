@@ -1,4 +1,7 @@
+using BusinessLibrary.Repositories;
 using BusinessLibrary.Services.Singleton;
+using DesignPatternsWeb.DB;
+using DesignPatternsWeb.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,9 +12,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Logging.AddConsole();
+builder.Services.AddDbContext<InMemeoryDBContext>();
 
 builder.Services.AddSingleton<ISayHello, MemoryHungryService>();
-
+builder.Services.AddTransient<CustomersUnitOfWork>();
+builder.Services.AddTransient<IOrdersRepository, OrdersRepository>();
 
 var app = builder.Build();
 
