@@ -1,12 +1,9 @@
 ﻿using BusinessLibrary.FactoryMethodExample.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLibrary.FactoryMethodExample.Models;
-
+/// <summary>
+/// Concrete product implementing the Product interface
+/// </summary>
 public class SpecialCustomer : ICustomer
 {
 }

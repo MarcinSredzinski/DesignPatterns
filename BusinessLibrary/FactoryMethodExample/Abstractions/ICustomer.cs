@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BusinessLibrary.FactoryMethodExample.Abstractions;
 
-namespace BusinessLibrary.FactoryMethodExample.Abstractions;
-
+/// <summary>
+/// An abstraction on a Product of the Factory Method.
+/// </summary>
 public interface ICustomer
 {
 }
