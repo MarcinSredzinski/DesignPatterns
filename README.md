@@ -3,6 +3,8 @@ Examples for design patterns, "antipatterns" and other usefull code snippets
 
 ## Basics
 
+## Creational patterns
+
 ### Singleton
 This controversial pattern, also considered an "antipattern" by some, is born from a rather simple concept of having
 only one instance of a class. To achieve this goal, we used to create a class with private constructor. 
@@ -15,6 +17,11 @@ reused across the whole project.
 #### Sources
 https://www.pentalog.com/blog/design-patterns/singleton-design-pattern/ 
 https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
+
+### Factory method 
+
+
+## Data access patterns (From Patterns of Enterprise Application Architecture)  
 
 ### Repository pattern 
 Repository pattern serves two main purposes:
@@ -40,3 +47,4 @@ will be completed in a single transaction.
 
 #### Sources
 https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-design 
+
