@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BusinessLibrary.FactoryMethodExample.Abstractions;
+using BusinessLibrary.FactoryMethodExample.Models;
 
 namespace BusinessLibrary.FactoryMethodExample.Creators;
 
-public class IndividualCustomerCreator
+public class IndividualCustomerCreator : Creator
 {
+    public override ICustomer FactoryMethod()
+    {
+        return new IndividualCustomer();
+    }
 }

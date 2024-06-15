@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BusinessLibrary.FactoryMethodExample.Abstractions;
+﻿namespace BusinessLibrary.FactoryMethodExample.Abstractions;
 
 public abstract class Creator
 {
+    public abstract ICustomer FactoryMethod();
 }
