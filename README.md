@@ -18,8 +18,15 @@ reused across the whole project.
 https://www.pentalog.com/blog/design-patterns/singleton-design-pattern/ 
 https://stackoverflow.com/questions/137975/what-are-drawbacks-or-disadvantages-of-singleton-pattern
 
-### Factory method 
-
+### Factory method   
+Creational design pattern providing an interface for creating objects, while allowing the subclasses to define 
+the type of objects that will be created. 
+Participants: 
+- Product - an abstraction over the objects the factory method creates, 
+- Concrete Product - implementation of the Product abstraction, 
+- Creator - declares the factory method which will return an object of type Product. It may have other, common functionality as well as
+default implementation of factory method returning a default Concrete Product object, 
+- Concrete Creator - presents a concrete implementation of Creator, overriding the factory method to return an instance of a Concrete Product. 
 
 ## Data access patterns (From Patterns of Enterprise Application Architecture)  
 
