@@ -36,7 +36,9 @@ https://www.dofactory.com/net/factory-method-design-pattern
 https://refactoring.guru/design-patterns/factory-method
 
 
-### Behavioral patterns
+## Behavioral patterns
+
+### Command pattern
 This pattern turns a request into a stand-alone object containing all necessary information about the request. As a result, this object can be 
 passed as a method argument, queued or undone. 
 Participants: 
