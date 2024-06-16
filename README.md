@@ -28,6 +28,24 @@ Participants:
 default implementation of factory method returning a default Concrete Product object, 
 - Concrete Creator - presents a concrete implementation of Creator, overriding the factory method to return an instance of a Concrete Product. 
 
+#### Code: 
+BusinessLibrary/FactoryMethodExample
+
+#### Sources: 
+https://www.dofactory.com/net/factory-method-design-pattern
+https://refactoring.guru/design-patterns/factory-method
+
+
+### Behavioral patterns
+This pattern turns a request into a stand-alone object containing all necessary information about the request. As a result, this object can be 
+passed as a method argument, queued or undone. 
+Participants: 
+- Command interface,
+- Concrete command,
+- Invoker,
+- Client,
+- Receiver
+
 ## Data access patterns (From Patterns of Enterprise Application Architecture)  
 
 ### Repository pattern 
