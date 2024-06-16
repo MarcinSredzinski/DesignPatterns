@@ -2,7 +2,7 @@
 
 public class OrderCancellationService
 {
-    public void CancelOrder()
+    internal void CancelOrder()
     {
         Console.WriteLine("Order cancelled");
     }

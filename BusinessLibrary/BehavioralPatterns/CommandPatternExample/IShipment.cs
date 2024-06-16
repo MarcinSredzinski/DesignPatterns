@@ -1,6 +1,6 @@
 ﻿namespace BusinessLibrary.BehavioralPatterns.CommandPatternExample;
 
-internal interface IShipment
+public interface IShipment
 {
     void SendShipment();
 }

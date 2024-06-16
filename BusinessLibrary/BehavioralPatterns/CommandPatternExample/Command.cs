@@ -1,6 +1,6 @@
 ﻿namespace BusinessLibrary.BehavioralPatterns.CommandPatternExample;
 
-public abstract class Command
+public interface ICommand
 {
-    public abstract void Execute();
+    void Execute();
 }

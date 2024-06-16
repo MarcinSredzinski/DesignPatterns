@@ -1,9 +1,9 @@
 ﻿namespace BusinessLibrary.BehavioralPatterns.CommandPatternExample;
 
-public class PrepareOrderForShipment : Command
+public class PrepareOrderForShipment(IShipment shipment) : ICommand
 {
-    public object void Execute()
+    public void Execute()
     {
-        throw new NotImplementedException();
+        shipment.SendShipment();
     }
 }

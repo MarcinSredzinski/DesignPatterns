@@ -1,9 +1,9 @@
 ﻿namespace BusinessLibrary.BehavioralPatterns.CommandPatternExample;
 
-public class CancelOrder : Command
+public class CancelOrder(OrderCancellationService orderCancellationService) : ICommand
 {
-    public override void Execute()
+    public void Execute()
     {
-        throw new NotImplementedException();
+        orderCancellationService.CancelOrder();
     }
 }
