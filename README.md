@@ -48,6 +48,11 @@ Participants:
 - Client,
 - Receiver
 
+### Observer pattern
+Behavioral pattern useful when multiple objects(Subscribers) may be interested in changes of a state of a single object(Publisher).
+
+
+- 
 ## Data access patterns (From Patterns of Enterprise Application Architecture)  
 
 ### Repository pattern 
