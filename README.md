@@ -51,8 +51,9 @@ Participants:
 ### Observer pattern
 Behavioral pattern useful when multiple objects(Subscribers) may be interested in changes of a state of a single object(Publisher).
 
-
-- 
+#### Sources
+https://learn.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern 
+ 
 ## Data access patterns (From Patterns of Enterprise Application Architecture)  
 
 ### Repository pattern 

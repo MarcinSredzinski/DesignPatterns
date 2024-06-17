@@ -1,9 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BusinessLibrary.BehavioralPatterns.Observer;
 
-namespace BusinessLibrary.BehavioralPatterns.Observer;
-
-public readonly struct BaggageInfo(int FlightNumber, string From, int Carousel);
+public readonly record struct BaggageInfo(int FlightNumber, string From, int Carousel);

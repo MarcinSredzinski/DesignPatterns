@@ -1,9 +1,15 @@
+using BusinessLibrary.BehavioralPatterns.Observer;
 using BusinessLibrary.Repositories;
 using BusinessLibrary.Services.Singleton;
 using DesignPatternsWeb.DB;
 using DesignPatternsWeb.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+//Run example
+ObserverExampleDemo.RunExample();
+
 
 // Add services to the container.
 
