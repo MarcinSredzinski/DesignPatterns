@@ -35,6 +35,19 @@ BusinessLibrary/FactoryMethodExample
 https://www.dofactory.com/net/factory-method-design-pattern
 https://refactoring.guru/design-patterns/factory-method
 
+## Structural patterns
+
+### Adapter
+Adapter is a simple structural design pattern. Its purpose is to create a special object that converts 
+interface of one object so that another object can uncerstand it. It is especially usefull when working with classes/libraries that we cannot modify, 
+but need to adapt them to make them match some arbitrary interface.
+How it works: 
+- Adapter class implements the interface we need to present, 
+- using this interface, we can pass the adapter to any code that relies on this interface, 
+- inside the adapter object, the interface calls are passing the requests to the second object, but in a format and form the second object expects.
+
+#### Sources: 
+https://refactoring.guru/design-patterns/adapter 
 
 ## Behavioral patterns
 
