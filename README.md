@@ -46,6 +46,9 @@ How it works:
 - using this interface, we can pass the adapter to any code that relies on this interface, 
 - inside the adapter object, the interface calls are passing the requests to the second object, but in a format and form the second object expects.
 
+#### Code: 
+BusinessLibrary/StructuralPatterns/Adapter/*
+
 #### Sources: 
 https://refactoring.guru/design-patterns/adapter 
 
@@ -67,6 +70,20 @@ Behavioral pattern useful when multiple objects(Subscribers) may be interested i
 #### Sources
 https://learn.microsoft.com/en-us/dotnet/standard/events/observer-design-pattern 
  
+### Mediator pattern  
+Main goal is to reduce complexity of chaotic dependencies beteen objects. It's achieved by limiting the direct communication between objects and forcing them 
+to work together via the mediator object.  
+Participants:
+- Components (components being various classes containing some business logic. Each needs to have a reference to a mediator.
+By referencing a mediator by interface, you can achieve components reusability across different programs - by linking them to different concrete instance of a mediator), 
+ components must not be aware of other components. From their perspective it's a black box - sender doesn't know who will handle it's request and receiver doesn't know 
+ who sent the request, 
+- Mediator interface - declares methods of communication with components (most of the time a single notification method). 
+- Concrete mediator - encapsulates relations between various compontents. It often keeps references to all components it manages and can even manage their lifecycle. 
+
+#### Sources: 
+https://refactoring.guru/design-patterns/mediator
+
 ## Data access patterns (From Patterns of Enterprise Application Architecture)  
 
 ### Repository pattern 
