@@ -4,6 +4,8 @@ Examples for design patterns, "antipatterns" and other usefull code snippets
 ## Basics
 
 ## Creational patterns
+- [Singleton](###Singleton),
+- [Factory method](###Factory method)
 
 ### Singleton
 This controversial pattern, also considered an "antipattern" by some, is born from a rather simple concept of having
@@ -36,6 +38,7 @@ https://www.dofactory.com/net/factory-method-design-pattern
 https://refactoring.guru/design-patterns/factory-method
 
 ## Structural patterns
+- [Adapter](###Adapter)
 
 ### Adapter
 Adapter is a simple structural design pattern. Its purpose is to create a special object that converts 
@@ -53,6 +56,11 @@ BusinessLibrary/StructuralPatterns/Adapter/*
 https://refactoring.guru/design-patterns/adapter 
 
 ## Behavioral patterns
+- [Command](###Command-pattern),
+- [Observer](###Observer-pattern),
+- [Mediator](###Mediator-pattern),
+- [Strategy](###Strategy-pattern)
+
 
 ### Command pattern
 This pattern turns a request into a stand-alone object containing all necessary information about the request. As a result, this object can be 
@@ -83,6 +91,21 @@ By referencing a mediator by interface, you can achieve components reusability a
 
 #### Sources: 
 https://refactoring.guru/design-patterns/mediator
+
+### Strategy pattern
+Strategy pattern allows for treating different algorithms solving the same problem as objects of distinct classes. The objects implement the same interface, 
+and thus are interchangeable. 
+Participants:
+- Context - holds a reference to a strategy object,
+- Strategy interface - declares an interface common to all supported algorithms,
+- Concrete strategy - implements the algorithm,
+- Client - uses the context to call the algorithm defined by a strategy object. The client decides which strategy to use. 
+
+#### Sources:
+https://refactoring.guru/design-patterns/strategy
+
+#### Code: 
+[Strategy example](BusinessLibrary/BehavioralPatterns/StrategyPattern/Client.cs)
 
 ## Data access patterns (From Patterns of Enterprise Application Architecture)  
 
